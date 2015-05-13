@@ -1,6 +1,5 @@
 package edu.hm.cs.swe2.creatures;
 
-
 public abstract class Creature {
 	private int lifePoint;
 	private final int maxLifePoint;
@@ -44,32 +43,29 @@ public abstract class Creature {
 			this.lifePoint = this.lifePoint + 1;
 		}
 		if (this.getLifePoint() == 0) {
-			this.lifePoint = this.lifePoint - 1;
+			this.lifePoint = 0;
+		}
+		if (this.getLifePoint() == this.maxLifePoint) {
+			this.lifePoint = this.maxLifePoint;
 		}
 		return this.lifePoint;
 	}
-
 
 	public void damage(Creature other) {
 
 		if (this.isAlive() && other.isAlive()
 				&& this.getLifePoint() > other.getLifePoint())
-			other.getLifePoint(other.getLifePoint() - this.getLifePoint());
+			other.getLifePoint();
 
 		else if (this.isAlive() && other.isAlive()
 				&& other.getLifePoint() > this.getLifePoint())
-			this.getLifePoint(this.getLifePoint() - other.getLifePoint());
+			this.getLifePoint();
 
 		else {
 
 		}
-	
-	
 
-	//public  void attack(Creature other);
+		// public void attack(Creature other);
 
-
-
-		
 	}
 }
