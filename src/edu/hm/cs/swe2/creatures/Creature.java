@@ -1,14 +1,14 @@
 package edu.hm.cs.swe2.creatures;
 
 public abstract class Creature {
-	private int lifePoint;
+	protected int lifePoint;
 	private final int maxLifePoint;
 	private final String name;
 
-	public Creature(String name, int lifePoint, int maxLifePoint) {
+	public Creature(String name, int maxLifePoint) {
 
 		this.name = name;
-		this.lifePoint = lifePoint;
+		this.lifePoint = getInitialLivePoints();
 		this.maxLifePoint = maxLifePoint;
 
 	}
@@ -31,43 +31,39 @@ public abstract class Creature {
 			return true;
 		}
 
-		else {
-			return false;
+		return false;
 
-		}
 	}
 
-	public int heal(Creature creature) {
+	public void heal() {
 
-		if (this.getLifePoint() < this.maxLifePoint) {
+		if (this.isAlive() && this.getLifePoint() < this.maxLifePoint) {
 			this.lifePoint = this.lifePoint + 1;
 		}
-		if (this.getLifePoint() == 0) {
-			this.lifePoint = 0;
-		}
-		if (this.getLifePoint() == this.maxLifePoint) {
-			this.lifePoint = this.maxLifePoint;
-		}
-		return this.lifePoint;
+
 	}
 
-	public void damage(Creature other) {
+	public void damage() {
 
-		if (this.isAlive() && other.isAlive()
-				&& this.getLifePoint() > other.getLifePoint())
-			other.getLifePoint();
-
-		else if (this.isAlive() && other.isAlive()
-				&& other.getLifePoint() > this.getLifePoint())
-			this.getLifePoint();
-
-		else {
-
+		if (this.isAlive()) {
+			this.lifePoint = this.lifePoint - 1;
 		}
+
+		// if (this.getLifePoint() == 0) {
+		// this.lifePoint = this.lifePoint;
+		// }
+
 	}
 
 	public void attack(Creature other) {
 
+		if (this.isAlive() && other.isAlive() && this != other) {
+			other.damage();
+
+		}
+
 	}
+
+	public abstract int getInitialLivePoints();
 
 }
