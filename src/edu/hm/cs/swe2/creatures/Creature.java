@@ -64,8 +64,10 @@ public abstract class Creature {
 		else {
 
 		}
+	}
 
-		// public void attack(Creature other);
+	public void attack(Creature other) {
 
 	}
+
 }
