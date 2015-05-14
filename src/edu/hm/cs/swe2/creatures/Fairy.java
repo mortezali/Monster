@@ -6,6 +6,8 @@ public class Fairy extends Creature{
 	private final static int maxLifePoint = 4;
 	private boolean alreadyDamaged = true;
 	
+	
+	//TODO: Name wird in Creature gespeichert. 
 	public Fairy (String name){
 		super(name, maxLifePoint);
 		

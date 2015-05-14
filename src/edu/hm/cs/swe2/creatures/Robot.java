@@ -5,6 +5,10 @@ public class Robot extends Creature {
 	private String name;
 	private final static int maxLifePoint = 6;
 	private int n;
+	
+	//TODO: Der Parameter vom Konstruktor ist ein INT
+	//In der Creature Panel kannst du das sehen.
+	//TODO: name wird in Creature gespeichert. nicht hier.
 
 	public Robot(String name) {
 		super(name, maxLifePoint);
