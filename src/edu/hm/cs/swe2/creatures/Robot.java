@@ -2,18 +2,16 @@ package edu.hm.cs.swe2.creatures;
 
 public class Robot extends Creature {
 
-	private String name;
 	private final static int maxLifePoint = 6;
-	private int n;
+	private int RobotCounter;
 	
 	//TODO: Der Parameter vom Konstruktor ist ein INT
 	//In der Creature Panel kannst du das sehen.
 	//TODO: name wird in Creature gespeichert. nicht hier.
 
-	public Robot(String name) {
-		super(name, maxLifePoint);
-		int n = n;
-
+	public Robot(int RobotCounter) {
+		super(null, maxLifePoint);
+	
 	}
 	public void damage() {
 		int i;
@@ -40,5 +38,11 @@ public class Robot extends Creature {
 		// TODO Auto-generated method stub
 		return 0;
 	}
-
+	public int getRobotCounter() {
+		return RobotCounter;
+	}
+	public void setRobotCounter(int robotCounter) {
+		RobotCounter = robotCounter;
+	}
+	
 }

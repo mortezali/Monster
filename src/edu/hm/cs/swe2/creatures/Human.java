@@ -1,19 +1,21 @@
 package edu.hm.cs.swe2.creatures;
 
-public class Human {
-	
+public class Human extends Creature {
+
 	private String name;
-	private int maxLifePoint;
-	
-	//TODO: Siehe CreaturePanel: Hat nur einen String als Parameter. 
-	
-	public Human(String name, int maxLifePoint){
-		
-		this.name = name;
-		this.maxLifePoint = 5;
+	private final static int maxLifePoint = 5;
+
+	// TODO: Siehe CreaturePanel: Hat nur einen String als Parameter.
+
+	public Human(String name) {
+		super(name, maxLifePoint);
+
 	}
 
-	
-	
-	
+	@Override
+	public int getInitialLivePoints() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
 }

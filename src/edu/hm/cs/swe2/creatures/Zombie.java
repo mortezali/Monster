@@ -1,15 +1,17 @@
 package edu.hm.cs.swe2.creatures;
 
 public class Zombie extends Creature {
-
-	public Zombie(String name, int maxLifePoint) {
-		super(name, maxLifePoint);
-
-	}
-
+	
 	private String name = "";
 	private boolean alreadyDamaged;
 	private final static int maxLifePoint = 0;
+
+	public Zombie() {
+		super("", maxLifePoint);
+
+	}
+
+
 
 	@Override
 	public void attack(Creature other) {
