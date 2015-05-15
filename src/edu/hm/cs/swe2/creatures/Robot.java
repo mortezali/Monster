@@ -3,7 +3,7 @@ package edu.hm.cs.swe2.creatures;
 public class Robot extends Creature {
 
 	private final static int maxLifePoint = 6;
-	private int RobotCounter;
+	private int RobotCounter = 0;
 	
 	//TODO: Der Parameter vom Konstruktor ist ein INT
 	//In der Creature Panel kannst du das sehen.

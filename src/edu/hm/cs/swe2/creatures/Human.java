@@ -18,4 +18,12 @@ public class Human extends Creature {
 		return 0;
 	}
 
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
 }

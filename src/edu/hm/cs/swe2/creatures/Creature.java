@@ -25,7 +25,7 @@ public abstract class Creature {
 		return maxLifePoint;
 	}
 
-	protected boolean isAlive() {
+	public boolean isAlive() {
 
 		if (this.lifePoint > 0) {
 			return true;
@@ -41,6 +41,10 @@ public abstract class Creature {
 			this.lifePoint = this.lifePoint + 1;
 		}
 
+	}
+	public String getHealth(){
+		return getHealth();
+		
 	}
 
 	public void damage() {

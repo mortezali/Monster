@@ -2,8 +2,7 @@ package edu.hm.cs.swe2.creatures;
 
 public class Zombie extends Creature {
 	
-	private String name = "";
-	private boolean alreadyDamaged;
+	
 	private final static int maxLifePoint = 0;
 
 	public Zombie() {
