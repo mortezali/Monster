@@ -11,11 +11,13 @@ public class Oger extends Creature{
 		}
 
 		public void attack(Creature other) {
-			while(other.lifePoint > 1){			
+				
 			if (this.isAlive() && other.isAlive() && other.getName() != "Oger" && other.lifePoint > 2){
-			
-				other.damage();
+				
+				while(other.lifePoint > 1){	
+				
 			}
+			
 			}
 		
 		}
