@@ -29,11 +29,11 @@ public class UberOger extends Creature{
 	@Override
 	public int getInitialLivePoints() {
 
-		return maxLifePoint;
+		return this.maxLifePoint/2;
 	}
 
 
-	public static int getLifepoint() {
+	public int getLifepoint() {
 		return lifePoint;
 	}
 
