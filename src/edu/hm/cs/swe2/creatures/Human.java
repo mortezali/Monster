@@ -14,9 +14,10 @@ public class Human extends Creature {
 
 	@Override
 	public int getInitialLivePoints() {
-		// TODO Auto-generated method stub
-		return 0;
+
+		return maxLifePoint;
 	}
+
 
 	
 

@@ -3,7 +3,7 @@ package edu.hm.cs.swe2.creatures;
 public class Robot extends Creature {
 
 	private final static int maxLifePoint = 6;
-	private int RobotCounter = 0;
+	private int RobotDamageCounter = 0;
 	
 	//TODO: Der Parameter vom Konstruktor ist ein INT
 	//In der Creature Panel kannst du das sehen.
@@ -14,13 +14,9 @@ public class Robot extends Creature {
 	
 	}
 	public void damage() {
-		int i;
-		for (i = 0; i <= 5; i++){
-			this.lifePoint = this.lifePoint - 0;{
-				for (i = 0; i > 5; i --){
-					this.lifePoint = this.lifePoint - this.lifePoint;
-				}
-			}
+		RobotDamageCounter ++;
+		if (RobotDamageCounter == maxLifePoint){
+			lifePoint = 0;
 		}
 	
 	}
@@ -35,14 +31,15 @@ public class Robot extends Creature {
 
 	@Override
 	public int getInitialLivePoints() {
-		// TODO Auto-generated method stub
-		return 0;
+
+		return maxLifePoint;
 	}
+	
 	public int getRobotCounter() {
-		return RobotCounter;
+		return RobotDamageCounter;
 	}
 	public void setRobotCounter(int robotCounter) {
-		RobotCounter = robotCounter;
+		RobotDamageCounter = robotCounter;
 	}
 	
 }

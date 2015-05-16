@@ -24,7 +24,9 @@ public class Zombie extends Creature {
 
 	@Override
 	public int getInitialLivePoints() {
-		return 0;
+
+		return maxLifePoint;
 	}
+
 
 }

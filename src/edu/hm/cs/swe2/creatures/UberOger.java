@@ -28,9 +28,10 @@ public class UberOger extends Creature{
 	}
 	@Override
 	public int getInitialLivePoints() {
-		// TODO Auto-generated method stub
-		return 0;
+
+		return maxLifePoint;
 	}
+
 
 	public static int getLifepoint() {
 		return lifePoint;
