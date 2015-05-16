@@ -1,6 +1,6 @@
 package edu.hm.cs.swe2.creatures;
 
-public class UberOger extends Creature{
+public class UberOger extends Oger{
 	
 	 
 	
@@ -8,7 +8,7 @@ public class UberOger extends Creature{
 	public final static int maxLifePoint = 10;
 
 	public UberOger() {
-		super("Oger", maxLifePoint);
+		super();
 		
 	}
 	
@@ -25,16 +25,6 @@ public class UberOger extends Creature{
 		if (this.isAlive()) {
 			UberOger.lifePoint = UberOger.lifePoint - 3;
 		}
-	}
-	@Override
-	public int getInitialLivePoints() {
-
-		return this.maxLifePoint/2;
-	}
-
-
-	public int getLifepoint() {
-		return lifePoint;
 	}
 
 }
