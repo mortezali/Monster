@@ -20,7 +20,7 @@ public class Oger extends Creature{
 		@Override
 		public int getInitialLivePoints() {
 
-			return this.maxLifePoint/2;
+			return this.maxLifePoint / 2;
 		}
 
 }
