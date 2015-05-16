@@ -15,9 +15,10 @@ public class Oger extends Creature{
 			if (this.isAlive() && other.isAlive() && other.getName() != "Oger" && other.lifePoint > 2){
 				
 				while(other.lifePoint > 1){	
+					other.damage();
 				
 			}
-			
+		
 			}
 		
 		}
