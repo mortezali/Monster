@@ -28,7 +28,7 @@ public class UberOger extends Oger {
 
 	@Override
 	public void heal() {
-		getLifePoint() = maxLifePoint();
+		lifePoint = maxLifePoint;
 
 	}
 

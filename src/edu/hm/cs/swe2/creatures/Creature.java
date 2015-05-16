@@ -56,11 +56,6 @@ public abstract class Creature {
 		if (this.isAlive()) {
 			this.lifePoint = this.lifePoint - 1;
 		}
-
-		// if (this.getLifePoint() == 0) {
-		// this.lifePoint = this.lifePoint;
-		// }
-
 	}
 
 	public void attack(Creature other) {

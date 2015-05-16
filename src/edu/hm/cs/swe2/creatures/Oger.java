@@ -11,10 +11,12 @@ public class Oger extends Creature{
 		}
 
 		public void attack(Creature other) {
-			if (this.isAlive() && other.isAlive() && other.getName() != "Oger" && other.lifePoint < 2){
+			while(other.lifePoint > 1){			
+			if (this.isAlive() && other.isAlive() && other.getName() != "Oger" && other.lifePoint > 2){
+			
 				other.damage();
 			}
-				
+			}
 		
 		}
 		@Override
