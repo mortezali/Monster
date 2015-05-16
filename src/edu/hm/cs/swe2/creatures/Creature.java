@@ -47,11 +47,8 @@ public abstract class Creature {
 		}
 
 	}
-	public void getHealth(){
-		if (this.lifePoint == this.maxLifePoint){
-			
-		}
-	
+	public int getHealth(){
+	return this.lifePoint;
 	}
 
 	public void damage() {
