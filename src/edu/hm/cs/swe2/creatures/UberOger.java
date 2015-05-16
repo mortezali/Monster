@@ -23,7 +23,7 @@ public class UberOger extends Creature{
 	public void damage() {
 
 		if (this.isAlive()) {
-			UberOger.lifePoint = UberOger.lifePoint - 1;
+			UberOger.lifePoint = UberOger.lifePoint - 3;
 		}
 	}
 	@Override

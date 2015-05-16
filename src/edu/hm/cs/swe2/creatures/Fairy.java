@@ -2,7 +2,6 @@ package edu.hm.cs.swe2.creatures;
 
 public class Fairy extends Creature{
 	
-	private String name;
 	private final static int maxLifePoint = 4;
 	private boolean alreadyDamaged = true;
 	
@@ -40,13 +39,6 @@ public class Fairy extends Creature{
 		return maxLifePoint;
 	}
 
-	public String getName() {
-		return name;
-	}
-
-	public void setName(String name) {
-		this.name = name;
-	}
-
+	
 
 }
