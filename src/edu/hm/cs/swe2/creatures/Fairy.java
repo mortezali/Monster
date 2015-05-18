@@ -5,7 +5,6 @@ public class Fairy extends Creature {
 	private final static int maxLifePoint = 4;
 	private boolean alreadyDamaged = true;
 
-	
 	public Fairy(String name) {
 		super(name, maxLifePoint);
 

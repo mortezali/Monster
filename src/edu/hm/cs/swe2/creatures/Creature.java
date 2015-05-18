@@ -40,15 +40,16 @@ public abstract class Creature {
 		if (this.isAlive() && this.getLifePoint() < this.maxLifePoint) {
 			this.lifePoint = this.lifePoint + 1;
 			{
-				if (this.getLifePoint() == 0){
-					
+				if (this.getLifePoint() == 0) {
+
 				}
 			}
 		}
 
 	}
-	public int getHealth(){
-	return this.lifePoint;
+
+	public int getHealth() {
+		return this.lifePoint;
 	}
 
 	public void damage() {

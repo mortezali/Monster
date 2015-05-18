@@ -2,7 +2,6 @@ package edu.hm.cs.swe2.creatures;
 
 public class UberOger extends Oger {
 
-
 	public final static int maxLifePoint = 10;
 
 	public UberOger() {
